@@ -3,12 +3,15 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import App from './App'
-import routes from './config'
+import routes from './config/routes'
 import api from './config/api'
+import arr from './config/add'
 
 Vue.use(VueRouter)
 
 Vue.prototype.$api=api;
+Vue.prototype.$add=arr;
+
 
 const router = new VueRouter({
   routes

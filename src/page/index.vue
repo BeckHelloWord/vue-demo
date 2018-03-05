@@ -15,7 +15,8 @@ export default {
   },
   created () {
     // 组件创建完后获取数据，这里和1.0不一样，改成了这个样子
-    this.get_data()
+    this.get_data();
+    this.$add();
   },
   methods: {
     get_data: function(params) {
